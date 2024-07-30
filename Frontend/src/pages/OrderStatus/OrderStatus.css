@@ -1,0 +1,88 @@
+.order-main-container{
+    width: 100%;
+    height: 100%;
+    padding: 20px 0px;
+}
+.order-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.order-item-container{
+    width: 80%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.order-item-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 30px !important;
+    overflow-x: scroll !important;
+    scrollbar-width: none;
+    padding-right: 25px;
+    -webkit-border-radius: 30px !important;
+    -moz-border-radius: 30px !important;
+    -ms-border-radius: 30px !important;
+    -o-border-radius: 30px !important;
+}
+
+.order-item-img{
+    width: 60px !important;
+    height: 60px;
+    border-radius: 40px;
+    margin: 10px 10px;
+    margin-left: 20px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+.order-des-box{
+    flex: 1;
+}
+
+.order-item-des-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.order-des{
+    font-size: 20px !important;
+    min-width: 60px;
+    margin-right: 10px !important;
+}
+.order-des-name{
+    font-size: 17px !important;
+    width: 200px;
+    margin-right: 30px !important;
+}
+.update-btn{
+    background: var(--main) !important;
+    color: black !important;
+    text-transform: none !important;
+    font-family: 'Times New Roman', Times, serif !important;
+    margin-left: 40px !important;
+    border-radius: 10px !important;
+    -webkit-border-radius: 10px !important;
+    -moz-border-radius: 10px !important;
+    -ms-border-radius: 10px !important;
+    -o-border-radius: 10px !important;
+}
+.order-des-status{
+    min-width: 60px;
+    margin-right: 10px !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px !important;
+}
+.dot{
+    transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+}

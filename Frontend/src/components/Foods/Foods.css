@@ -1,0 +1,25 @@
+.food-main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+}
+.food-title{
+    font-size: 25px !important;
+    margin-top: 10px;
+    margin-bottom: 15px !important;
+}
+.food-des{
+    font-size: 17px !important;
+}
+
+.food-item-container{
+    width: 100% !important;
+    justify-content: center;
+    margin-top: 20px !important;
+}
+
+@media screen and (max-width: 450px){
+    .food-des{
+        display: none;
+    }
+}

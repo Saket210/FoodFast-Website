@@ -1,0 +1,25 @@
+:root {
+  --main: #E3D026;
+  --light: #E9DB5D;
+  --dark: #A29415;
+  --white: #ffffff;
+  --contrastText: #242105;
+}
+
+*{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family:'Times New Roman', Times, serif !important;
+}
+
+.app-container{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+

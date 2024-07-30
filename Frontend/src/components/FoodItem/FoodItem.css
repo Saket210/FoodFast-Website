@@ -1,0 +1,36 @@
+.food-card{
+    width: 270px;
+    border-radius: 20px !important;
+    -webkit-border-radius: 20px !important;
+    -moz-border-radius: 20px !important;
+    -ms-border-radius: 20px !important;
+    -o-border-radius: 20px !important;
+}
+
+.price{
+    font-size: 20px !important;
+}
+
+.rating{
+    width: 30% !important;
+    margin-bottom: 5px;
+}
+
+.item-count{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin:2px 0px;
+}
+
+.count-txt{
+    margin: 0px 4px !important;
+}
+.count-icon{
+    background:#ccc;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
