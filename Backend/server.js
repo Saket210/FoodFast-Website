@@ -10,7 +10,10 @@ const app = express()
 //middlewares
 app.use('/api/order/payment/webhook',raw({type:'*/*'}))
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    origin: process.env.FRONTEND_URL,
+}
+))
 
 // conect db
 connectDb();

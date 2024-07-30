@@ -41,8 +41,8 @@ const placeOrder = async (req, res) => {
     const session = await stripe.checkout.sessions.create({
       line_items: line_items,
       mode: "payment",
-      success_url: process.env.STRIPE_CHECKOUT_SUCCESS_URL,
-      cancel_url: process.env.STRIPE_CHECKOUT_CANCEL_URL,
+      success_url: `${process.env.FRONTEND_URL}/allorders`,
+      cancel_url: `${process.env.FRONTEND_URL}/allorders`,
       client_reference_id: orderDetails._id.toString(),
     });
 
