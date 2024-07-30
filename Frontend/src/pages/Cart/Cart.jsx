@@ -15,16 +15,21 @@ import { useNavigate } from "react-router-dom";
 
 const Cart = ({setShowModal}) => {
 
+  const { cartItems, removeFromCart,food_list,url, calculateAmount } = useContext(CartContext);
+
   const authHandler = () => {
     if(localStorage.getItem('token')){
-      navigate('/order');
+      if(calculateAmount()>0){
+        navigate('/order');
+      } else {
+        alert("No items in cart");
+      }
     } else {
       setShowModal(true);
       window.scrollTo(0,0);
     }
   }
 
-  const { cartItems, removeFromCart,food_list,url } = useContext(CartContext);
   const navigate = useNavigate();
   return (
     <div className="cart-main-container">

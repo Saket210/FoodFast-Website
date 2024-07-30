@@ -17,7 +17,7 @@ const CartSummary = ({buttonText, onClick, type}) => {
             Total:<span className="summary-amounts">{calculateAmount()}$</span>
           </Typography>
           <Typography className="summary-fields">
-            Delivery Fee:<span className="summary-amounts">2$</span>
+            Delivery Fee:<span className="summary-amounts">{calculateAmount()===0?0:2}$</span>
           </Typography>
           <Typography className="summary-fields">
             Amount Payable:
